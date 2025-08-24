@@ -40,7 +40,7 @@ const StoreContextProvider = (props) => {
                 totalAmount += itemInfo.price * cartItems[item];
             }  
             } catch (error) {
-                
+                console.log(error)
             }
             
         }

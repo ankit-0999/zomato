@@ -1,16 +1,31 @@
-import React from 'react'
-import './Header.css'
+import React, { useState, useEffect } from 'react';
+import './Header.css';
 
 const Header = () => {
-    return (
-        <div className='header'>
-            <div className='header-contents'>
-                <h2>Order your favourite food here</h2>
-                <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
-                <button>View Menu</button>
-            </div>
-        </div>
-    )
-}
+  // Array of demo banner images (replace with your images in /public folder)
+  const images = [
+    '/header_img.png',
+    '/header_img2.png',
+    '/header_img3.png'
+  ];
 
-export default Header
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto change every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div
+      className="header"
+      style={{ backgroundImage: `url(${images[currentIndex]})` }}
+    >
+    </div>
+  );
+};
+
+export default Header;

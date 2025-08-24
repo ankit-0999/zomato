@@ -62,6 +62,8 @@ import parcel_icon from './parcel_icon.png'
 import checked from './checked.png'
 import un_checked from './un_checked.png'
 
+import iphone from './phone/iphone.jpg'
+
 export const assets = {
     logo,
     basket_icon,
@@ -86,39 +88,37 @@ export const assets = {
     un_checked
 }
 
-export const menu_list = [
-    {
-        menu_name: "Salad",
-        menu_image: menu_1
-    },
-    {
-        menu_name: "Rolls",
-        menu_image: menu_2
-    },
-    {
-        menu_name: "Deserts",
-        menu_image: menu_3
-    },
-    {
-        menu_name: "Sandwich",
-        menu_image: menu_4
-    },
-    {
-        menu_name: "Cake",
-        menu_image: menu_5
-    },
-    {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
-    }]
+export const menu_list = {
+  Foods: [
+    { menu_name: "Salad", menu_image: menu_1 },
+    { menu_name: "Rolls", menu_image: menu_2 },
+    { menu_name: "Deserts", menu_image: menu_3 },
+    { menu_name: "Sandwich", menu_image: menu_4 },
+    { menu_name: "Cake", menu_image: menu_5 },
+    { menu_name: "Pure Veg", menu_image: menu_6 },
+    { menu_name: "Pasta", menu_image: menu_7 },
+    { menu_name: "Noodles", menu_image: menu_8 },
+  ],
+
+  Phones: [
+    { menu_name: "iPhone", menu_image: iphone },
+    { menu_name: "Samsung", menu_image: "/images/samsung.png" },
+    { menu_name: "OnePlus", menu_image: "/images/oneplus.png" },
+  ],
+
+  Electronics: [
+    { menu_name: "Laptop", menu_image: "/images/laptop.png" },
+    { menu_name: "Headphones", menu_image: "/images/headphones.png" },
+    { menu_name: "Camera", menu_image: "/images/camera.png" },
+  ],
+
+  Fashion: [
+    { menu_name: "T-Shirt", menu_image: "/images/tshirt.png" },
+    { menu_name: "Jeans", menu_image: "/images/jeans.png" },
+    { menu_name: "Jacket", menu_image: "/images/jacket.png" },
+  ],
+};
+
 
 export const food_list = [
     {

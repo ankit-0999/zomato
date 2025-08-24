@@ -1,3 +1,31 @@
+
+.toggle-bar {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0 20px 0;
+  flex-wrap: wrap;
+}
+
+.toggle-bar button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.toggle-bar button:hover {
+  background: #ddd;
+}
+
+.toggle-bar .active-toggle {
+  background: tomato;
+  color: white;
+  border: 1px solid tomato;
+}
+
 .explore-menu{
     display: flex;
     flex-direction: column;
